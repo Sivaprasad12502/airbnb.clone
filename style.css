@@ -1,0 +1,245 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+@font-face {
+    font-family: "tt";
+    src: url();
+}
+h1{
+    font-size: 1em;
+}
+h2,h3{
+    font-size: 1em;
+    font-style:normal ;
+}
+h3{
+    color: #a9a9a9;
+}
+.container{
+    padding: 5%;
+    
+   
+}
+.div1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 40px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+.icons{
+   
+    display: flex;
+    gap: 30px;
+    overflow-x: scroll;
+}
+.container2{
+    padding: 5%;
+}
+.img{
+    border-radius: 10px;
+    
+    object-fit: cover;
+}
+.div4{
+    display: flex;
+    flex-direction: row;
+    /* overflow-x: scroll; */
+}
+.container3{
+    padding: 5%;
+}
+
+/* footer */
+.categories{
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    gap: 50px;
+    border-bottom: 1px solid gray;
+} 
+p{
+    white-space: nowrap;;
+}
+.last0{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    
+}
+.last{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.last1{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+h5{
+    font-size: 1.5em;
+}
+#navbar{
+    background-color: #F7F7F7;
+}
+.end{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+    background-color: #F7F7F7;
+}
+.end0{
+    border-bottom: 1px solid gray;
+    background-color: #F7F7F7;
+    padding: 20px;
+
+}
+.end2{
+    display: flex;
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav{
+    display: none;
+}
+/* divsize */
+.container2{
+    /* height: 300px; */
+    width: 300px;
+}
+.gridone{
+    width: 300px;
+}
+.div4{
+    width: 300px;
+}
+@media screen and (min-width:700px) {
+    .div1{
+        display: none;
+    }
+    nav{
+        display: inline;
+       
+    }
+    .top{
+        display: flex;
+        justify-content: space-between;
+        padding:  40px;
+        border-bottom: 1px solid gray;
+    }
+    .topone{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap:10px;
+        border: 1px solid gray;
+        border-radius: 30px;
+        padding: 10px;
+       
+    }
+    .search{
+        border-radius: 30px;
+        background-color: red;
+        padding: 10px;
+    }
+    .c{
+        border-right: 1px solid gray;
+    }
+    .toptwo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap:10px;
+        
+
+    }
+    .topthree{
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+        border-radius: 30px;
+        border: 1px solid gray;
+
+    }
+    .top3{
+        padding: 13px;
+    }
+    .top33{
+        padding: 7px;
+    }
+     .img{
+         width: 200px;
+        height: 200px; 
+    } 
+     .container2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        align-items: center;
+    }
+    .container3{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        align-items: center;
+    }
+    .container4{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        align-items: center;
+       
+    }
+    .img{
+        padding: 10px;
+        border-radius: 30px;
+    }
+    .div4{
+         padding: 10px; 
+        width: 200px;
+    }
+    .div4 img{
+        width: 200px;
+        height: 200px;
+       
+    }
+    .div444{
+        width: 200px;
+    }
+    
+    .experiences1{
+       
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+         gap:2%;
+        align-items: center;
+     } 
+}
+@media screen and (min-width:987px) {
+    .gridone{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .experiences1{
+       
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap:2%;
+        align-items: center;
+     } 
+    
+}
+
+    
