@@ -9,6 +9,7 @@ body{
 }
 h1{
     font-size: 1em;
+    margin: 10px 0px 0px 0px;
 }
 h2,h3{
     font-size: 1em;
@@ -17,31 +18,71 @@ h2,h3{
 h3{
     color: #a9a9a9;
 }
+/* stickyyyyy  */
 .container{
     padding: 5%;
+    /* position: sticky;
+    top: 0;
+    background-color: #fff; */
+   
     
    
 }
 .div1{
     display: flex;
     align-items: center;
-    justify-content: center;
-    
-    border-radius: 40px;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 40px; 
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
 }
-.icons{
-   
+.two{
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+}
+.three{
+    display: flex;
+    flex-direction: row;
+    row-gap: 10px;
+     margin-bottom: 10px;
+}
+.icon{
+    width: 24px;
+}
+.icndv span{
+    font-size: 0.75rem;
+}
+.icons{
+
+    grid-template-columns: 100%;
+    display: grid;
+    grid-auto-columns: max-content ;
+    grid-auto-flow: column;
+   
+    grid-template-columns: repeat(13,1fr);
+    justify-content: flex-start;
+    column-gap: 30px;
     overflow-x: scroll;
+    border: 1px solid beige;
 }
-.container2{
-    padding: 5%;
+.icondivv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 0px 10px;
+    padding: 4px 0px;
 }
+.icndv{
+    min-width: max-content;
+}
+
 .img{
     border-radius: 10px;
-    
+    height: 285px;
+    width: 100%;
     object-fit: cover;
 }
 .div4{
@@ -51,11 +92,15 @@ h3{
     /* overflow-x: scroll; */
 }
 .container3{
-    padding: 5%;
+   
+
+    width: 100%;
 }
 
 /* footer */
 .categories{
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     overflow-x: scroll;
@@ -63,32 +108,42 @@ h3{
     border-bottom: 1px solid gray;
 } 
 p{
-    white-space: nowrap;;
+    white-space: nowrap;
 }
 .last0{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 24px;
     justify-content: center;
-    justify-content: space-evenly;
-    
-}
-.last{
-    display: flex;
-    flex-direction: column;
+    padding: 32px 0px 0px;
     
     
 }
+
+    
+
 .last1{
     display: flex;
     flex-direction: column;
     
 
 }
-h5{
-    font-size: 1.5em;
+h5{ 
+    margin: 0;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
 }
 #navbar{
     background-color: #F7F7F7;
 }
+.navdiv{
+    
+    box-sizing: border-box;
+    padding: 48px 24px;
+}
+
 .end{
     display: flex;
     flex-direction: column;
@@ -99,15 +154,24 @@ h5{
     border-bottom: 1px solid gray;
     background-color: #F7F7F7;
     padding: 20px;
-
+    width: 100%;
+    box-sizing: border-box;
+   
 }
 .end2{
     display: flex;
     margin-top: 20px;
 }
+h6{
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: rgb(34, 34, 34);
+}
 a{
     text-decoration: none;
     color: black;
+    font-size: 14px;
+    line-height: 25px;
 }
 nav{
     display: none;
@@ -118,11 +182,43 @@ nav{
     width: 300px;
 }
 .gridone{
-    width: 300px;
+    min-width: 375px;
+    max-width: 100%;
+    margin: 24px 0px 32px;
+    padding:0px 24px;
+    box-sizing: border-box;
+}
+.experiences{
+    margin: 24px 0px 32px;
+    padding:0px 24px ;
+    box-sizing: border-box;
 }
 .div4{
     width: 300px;
 }
+/* *{ */
+    /* box-sizing: border-box; */
+/* } */
+@media screen  and (min-width:550px){
+    .img{
+        width: 230px;
+        height: 219px;
+        object-fit: cover;
+    }
+    .rain{
+        width: 100%;
+    }
+    .div4{
+        width: 100%;
+    }
+    .gridone{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+    
+
 @media screen and (min-width:700px) {
     .div1{
         display: none;
