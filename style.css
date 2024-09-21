@@ -27,15 +27,15 @@ h1{
     margin: 14px 24px 0px;
 }
 /* stickyyyyy  */
-/* .container{
-    padding: 5%; 
+.container{
+    /* padding: 5%;  */
     position: sticky;
     top: 0;
     background-color: #fff; 
    
     
    
-} */
+}
 .div1{
     display: flex;
     align-items: center;
@@ -219,6 +219,8 @@ p{
     color: #222222;
 } 
 .end a{
+    font-family: "yy";
+
     font-weight: 400;
     line-height: 1.125rem;
     font-size: 0.875rem;
@@ -250,6 +252,7 @@ p{
     align-items: center;
     justify-content: flex-start;
     gap: 30px;
+    margin: 0px 0px 16px ;
    
 }
 .eng{
@@ -261,7 +264,7 @@ p{
     padding: 24px 0px;
     display: flex;
     flex-direction:column;
-    gap: 30px;
+   
 }
 .inr{
     display: flex;
@@ -285,7 +288,6 @@ p{
 .prvcy{
     display: flex;
     flex-direction: column;
-    gap: 10px;
     justify-content: center;
 }
 .prvcy span{
@@ -375,15 +377,13 @@ p{
     .img{
          object-fit: cover;
     }
-    .rain span{
-        font-size: 1.2rem;
-        /* word-break: break-all;
-        text-overflow: ellipsis;
-        overflow-x:hidden;
-        overflow-y: hidden;
-        display: inline-block;
-        white-space: nowrap; */
-    }
+     .rain span{
+       
+       overflow: clip;
+       text-overflow: ellipsis;
+       overflow: hidden;
+        
+    } 
     
     
    
@@ -417,30 +417,50 @@ p{
        
     }
     .top{
+        
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding:  40px;
-        border-bottom: 1px solid gray;
+        /* padding: 0px 25px; */
+        border-bottom: 1px solid #dddddd;
+        padding-bottom: 20px;
+        margin-top: 20px;
+        
     }
     .topone{
-        width: 50%;
+        background-color: #ffff;
+        max-width: 100%;
+        
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        gap:10px;
-        border: 1px solid gray;
-        border-radius: 30px;
-        padding: 10px;
+        text-align: left;
+        border: 1px solid #dddddd;
+        border-radius: 40px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.08),0 4px 12px rgba(0,0,0,0.05);
+        
        
     }
     .search{
+        
         border-radius: 30px;
-        background-color: red;
+        background-color: #ff385c;
+        margin: 7px 7px 7px 0px;
         padding: 10px;
     }
-    .c{
-        border-right: 1px solid gray;
+    .c span{
+        font-weight: 500;
+        font-family: "yy";
+        color: #222222;
+        line-height: 1.375rem;
+        font-size: 0.875rem;
+        padding: 0 16px;
+        margin: -1px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow-x: hidden;
+        width: 100%;
+        border-right: 1px solid #dddddd;
+
     }
     .toptwo{
         display: flex;
@@ -450,24 +470,43 @@ p{
         
 
     }
+    .toptwo span{
+        font-weight: 500;
+        font-size: 0.875rem;
+        font-family: "yy";
+        color: #222222;
+    }
     .topthree{
+        width: 85px;
+        height: 48px;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 8px 8px 8px 14px;
+        /* padding: 8px 8px 8px 14px; */
         gap: 10px;
         border-radius: 30px;
         border: 1px solid gray;
-        width: 70px;
-        height: 40px;
+        
+    }
+    .ytjk{
+        font-size: 2rem;
+    }
+    .air{
+        align-items: center;
 
     }
-    .top3{
-        padding: 13px;
+
+    .face{
+        display: inline;
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
-    .top33{
-        padding: 7px;
+    #hkk{
+        display: flex;
+        justify-content: center;
     }
+   
     
 }
 @media screen and (min-width:987px) {
