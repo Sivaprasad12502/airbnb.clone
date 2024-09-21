@@ -7,11 +7,22 @@ body{
     font-family: "tt";
     src: url(/images/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2);
 }
+@font-face {
+    font-family: "yy";
+    src: url(/images/AirbnbCerealVF_W_Wght.2d9d32865ef1262644c455b3ead871e9.woff2);
+}
 h1{
     font-size: 1em;
+    font-weight: 500;
     margin: 10px 0px 0px 0px;
-}
+    color: #222222;
+    font-size: 0.875rem;
+    font-family: "yy";
 
+}
+.one{
+    padding-left: 10px;
+}
 .container{
     margin: 14px 24px 0px;
 }
@@ -29,11 +40,11 @@ h1{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 10px;
+    gap: 19px;
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 40px; 
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 8px 16px #EBEBEB;
 }
 .two{
     display: flex;
@@ -42,14 +53,29 @@ h1{
 .three{
     display: flex;
     flex-direction: row;
-    row-gap: 10px;
-     margin-bottom: 10px;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.three span{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 50px;
+    font-family: "yy";
+    
+    font-size: 0.75rem;
+    color: #6A6A6A;
+    letter-spacing: normal;
 }
 .icon{
     width: 24px;
 }
 .icndv span{
+    font-family: "yy";
     font-size: 0.75rem;
+    color: #6A6A6A;
+}
+.icondivv img{
+    color:#6A6A6A ;
 }
 .icons{
 
@@ -60,9 +86,9 @@ h1{
    
     grid-template-columns: repeat(13,1fr);
     justify-content: flex-start;
-    column-gap: 30px;
+    column-gap: 32px;
     overflow-x: scroll;
-    border-bottom: 1px solid beige;
+    border-bottom: 1px solid #EBEBEB;
 }
 .icons::-webkit-scrollbar{
     display:none;
@@ -89,6 +115,7 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    gap: 5px;
 }
 /* div4 444444444444 */
 .div4{
@@ -100,20 +127,26 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5px;
+    line-height: 1.1875rem;
 }
 .kevin{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5px;
+    line-height: 1.1875rem;
 }
-span{
-    font-size: 20px;
+.rain span{
+    color: #222222;
+    font-size: 0.9375rem;
     font-family: "tt";
 }
-.sc-span{
-    color: #a9a9a9;
+.kevin span{
+    color: #222222;
+    font-size: 0.9375rem;
+    font-family: "tt";
+}
+#sp2{
+    color: #6A6A6A;
 }
 
 
@@ -130,7 +163,6 @@ span{
     display: flex;
     justify-content: space-between;
     overflow-x: scroll;
-    gap: 50px;
     border-bottom: 1px solid gray;
 } 
 .categories::-webkit-scrollbar{
@@ -170,9 +202,29 @@ p{
 .end{
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid gray;
+    gap: 12px;
+    border-top: 1px solid #EBEBEB ;
     background-color: #F7F7F7;
-    padding: 30px 0px;
+    padding: 24px 0px;
+}
+.supp :nth-child(3){
+    border-bottom: 1px solid #EBEBEB;
+}
+.end span{
+    font-family: "yy";
+    margin-bottom: 12px;
+    font-weight: 500;
+    line-height: 1.125rem;
+    font-size: 0.875rem;
+    color: #222222;
+} 
+.end a{
+    font-weight: 400;
+    line-height: 1.125rem;
+    font-size: 0.875rem;
+    background: transparent;
+    color: #222222;
+    text-decoration: none;
 }
 .supp{
     display: flex;
@@ -215,7 +267,20 @@ p{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
+}
+.inr span{
+    font-weight: 500;
+    font-family: "yy";
+    font-size: 0.875rem;
+}
+.eng span{
+    font-weight: 500;
+    font-family: "yy";
+    font-size: 0.875rem;
+}
+.face{
+    display: none;
 }
 .prvcy{
     display: flex;
@@ -223,12 +288,14 @@ p{
     gap: 10px;
     justify-content: center;
 }
-a{
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-    line-height: 25px;
+.prvcy span{
+    font-family: "yy";
+    font-size: 0.875rem;
+    color: rgb(34, 34, 34);
+    margin-bottom: 2px;
+    
 }
+
 nav{
     display: none;
 }
@@ -238,6 +305,9 @@ nav{
     /* width: 300px; */
 /* } */
 .gridone{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 40px;
     min-width: 375px;
     max-width: 100%;
     margin: 24px 0px 32px;
@@ -249,9 +319,18 @@ nav{
     padding:0px 24px ;
     box-sizing: border-box;
 }
+.experiences1{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 40px;
+   
+   
+   
+}
 h5{
-    font-size: 3.5rem;
-    font-size: "tt";
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "yy";
     color: #222222;
     display: flex;
     justify-content: flex-start;
@@ -260,25 +339,34 @@ h5{
     margin-bottom: 15px;
 }
 h6{
-    font-size: 2rem;
-    font-family: "tt";
+    font-size: 1.375rem;
+    font-weight: 500;
+    font-family: "yy";
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-top: 0;
     margin-bottom: 8px;
 }
-p,a{
-    font-size: 1.2rem;
-    font-family: "tt";
+p{
+    font-family: "yy";
+    font-weight: 500;
+    font-size: 0.875rem;
+    margin: 6px 6px 6px -10px;
+    padding: 10px;
 }
-a{
-    color: #6a6a6a;
-    line-height: 40px;
+.last1 span{
+    font-family: "yy";
+    font-weight: 500;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    color: #222222;
+
 }
-.prvcy span{
-    color:#6a6a6a;
-}
+
 
 /* *{ */
     /* box-sizing: border-box; */
@@ -331,6 +419,7 @@ a{
     .top{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding:  40px;
         border-bottom: 1px solid gray;
     }
@@ -362,13 +451,15 @@ a{
 
     }
     .topthree{
-        height: 40px;
         display: flex;
+        justify-content: center;
         align-items: center;
-        justify-content: space-around;
+        padding: 8px 8px 8px 14px;
         gap: 10px;
         border-radius: 30px;
         border: 1px solid gray;
+        width: 70px;
+        height: 40px;
 
     }
     .top3{
