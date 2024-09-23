@@ -3,6 +3,9 @@ body{
     padding: 0;
 
 }
+.titleair{
+    display: none;
+}
 @font-face {
     font-family: "tt";
     src: url(/images/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2);
@@ -36,7 +39,7 @@ h1{
     
    
 }
-.div1{
+.divone{
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -211,12 +214,13 @@ p{
     background-color: #F7F7F7;
     padding: 24px 0px;
 }
-.supp :nth-child(3){
+/* .supp :nth-child(3){
     border-bottom: 1px solid #EBEBEB;
-}
+} */
 .end span{
+    
     font-family: "yy";
-    margin-bottom: 12px;
+    /* margin-bottom: 12px; */
     font-weight: 500;
     line-height: 1.125rem;
     font-size: 0.875rem;
@@ -423,7 +427,7 @@ p{
     
 
 @media screen and (min-width:740px) {
-    .div1{
+    .divone{
         display: none;
     }
     nav{
@@ -454,7 +458,7 @@ p{
          padding: 0px 40px; 
         border-bottom: 1px solid #dddddd;
         padding-bottom: 20px;
-        padding-top: 10px;
+        padding-top: 15px;
         /* margin-top: 20px; */
         
     }
@@ -533,18 +537,16 @@ p{
         color: #222222;
     }
     .topthree{
-        
+        height: 30px;
         display: flex;
         align-items: center; 
         padding: 8px 8px 8px 14px; 
         gap: 10px;
         border-radius: 30px;
-        border: 1px solid gray;
+        border: 1px solid #dddddd;
         
     }
-    .ytjk{
-        font-size: 2rem;
-    }
+   
     .air{
         align-items: center;
 
@@ -580,6 +582,54 @@ p{
     .supp{
         display: grid;
         grid-template-columns: repeat(3,1fr);
+    }
+    
+}
+@media screen and (min-width:1140px) {
+
+    .airtitle{
+        display: none;
+    }
+    .titleair{
+        display: inline;
+    }
+    .gridone{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .experiences1{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .last0{
+        display: grid;
+        grid-template-columns: repeat(6 ,1fr);
+    }
+    .lastt3{
+        display: inline;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .lastt3 span{
+        font-family: "tt";
+        font-size: 0.875rem;
+        line-height: 1.125rem;
+    }
+    
+    .categories{
+       
+        justify-content: unset;
+    }
+    .air{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .prvcy{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
     }
     
 }
