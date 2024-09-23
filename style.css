@@ -23,12 +23,12 @@ h1{
 .one{
     padding-left: 10px;
 }
-.container{
+/* .container{
     margin: 14px 24px 0px;
-}
+} */
 /* stickyyyyy  */
 .container{
-    /* padding: 5%;  */
+   
     position: sticky;
     top: 0;
     background-color: #fff; 
@@ -41,8 +41,8 @@ h1{
     align-items: center;
     justify-content: flex-start;
     gap: 19px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin: 14px 24px 0px;
+    padding: 0px 4px;
     border-radius: 40px; 
     box-shadow: 0px 8px 16px #EBEBEB;
 }
@@ -83,7 +83,7 @@ h1{
     display: grid;
     grid-auto-columns: max-content ;
     grid-auto-flow: column;
-   
+    padding: 0px 24px;
     grid-template-columns: repeat(13,1fr);
     justify-content: flex-start;
     column-gap: 32px;
@@ -124,15 +124,19 @@ h1{
     /* overflow-x: scroll; */
 }
 .rain{
-    display: flex;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
     line-height: 1.1875rem;
 }
 .kevin{
-    display: flex;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
     line-height: 1.1875rem;
 }
 .rain span{
@@ -177,18 +181,18 @@ p{
     row-gap: 24px;
     justify-content: center;
     padding: 32px 0px 0px;
-    
-    
+    margin: 0;
 }
-
-    
-
 .last1{
     display: flex;
     flex-direction: column;
     
 
 }
+.lastt2 ,.lastt3{
+    display: none;
+}
+
 
 #navbar{
     background-color: #F7F7F7;
@@ -368,22 +372,32 @@ p{
     color: #222222;
 
 }
+.icondivv img{
+    opacity: 50%;
+}
 
 
 /* *{ */
     /* box-sizing: border-box; */
 /* } */
 @media screen  and (min-width:550px){
+  
     .img{
          object-fit: cover;
     }
      .rain span{
-       
+       white-space: nowrap;
        overflow: clip;
        text-overflow: ellipsis;
        overflow: hidden;
         
     } 
+    .kevin span{
+        white-space: nowrap;
+        overflow: clip;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
     
     
    
@@ -416,21 +430,40 @@ p{
         display: inline;
        
     }
+    .icons{
+        padding: 0px 40px;
+    }
+    .gridone{
+        padding: 0px 40px;
+    }
+    .experiences{
+        padding: 0px 40px;
+    } 
+    .navdiv{
+        padding: 48px 40px;
+    }
+    .end0{
+        padding: 0px 40px;
+    }
+    
     .top{
         
         display: flex;
         justify-content: space-between;
         align-items: center;
-        /* padding: 0px 25px; */
+         padding: 0px 40px; 
         border-bottom: 1px solid #dddddd;
         padding-bottom: 20px;
-        margin-top: 20px;
+        padding-top: 10px;
+        /* margin-top: 20px; */
         
     }
     .topone{
         background-color: #ffff;
         max-width: 100%;
-        
+        /* display: grid;
+        grid-template-columns: repeat(4,1fr);
+         */
         display: flex;
         align-items: center;
         text-align: left;
@@ -443,6 +476,7 @@ p{
     .search{
         
         border-radius: 30px;
+        color: #F7F7F7;
         background-color: #ff385c;
         margin: 7px 7px 7px 0px;
         padding: 10px;
@@ -455,18 +489,40 @@ p{
         font-size: 0.875rem;
         padding: 0 16px;
         margin: -1px;
+        overflow: clip;
         text-overflow: ellipsis;
         white-space: nowrap;
-        overflow-x: hidden;
+        overflow: hidden;
         width: 100%;
         border-right: 1px solid #dddddd;
 
     }
+    
+    .yjkkui{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+    }
+    .lastt2{
+        display: inline;
+        display: flex;
+        flex-direction: column;
+    }
+    .lastt2 span{
+        font-family: "tt";
+        font-size: 0.875rem;
+        line-height: 1.125rem;
+    }
+    
+    .globe{
+        padding: 12px;
+    }
     .toptwo{
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        gap:10px;
+        /* justify-content: space-between;
+        gap:10px; */
         
 
     }
@@ -477,12 +533,10 @@ p{
         color: #222222;
     }
     .topthree{
-        width: 85px;
-        height: 48px;
+        
         display: flex;
-        justify-content: center;
-        align-items: center;
-        /* padding: 8px 8px 8px 14px; */
+        align-items: center; 
+        padding: 8px 8px 8px 14px; 
         gap: 10px;
         border-radius: 30px;
         border: 1px solid gray;
@@ -509,18 +563,24 @@ p{
    
     
 }
-@media screen and (min-width:987px) {
+@media screen and (min-width:950px) {
     .gridone{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(3,1fr);
     }
     .experiences1{
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
        
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        gap:2%;
-        align-items: center;
      } 
+    .last0{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    } 
+    .supp{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
     
 }
 
