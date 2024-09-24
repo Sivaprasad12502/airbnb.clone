@@ -153,6 +153,7 @@ h1{
     flex-direction: column;
     justify-content: center; */
     line-height: 1.1875rem;
+    grid-gap: 4px;
 }
 .kevin{
     display: grid;
@@ -161,16 +162,19 @@ h1{
     flex-direction: column;
     justify-content: center; */
     line-height: 1.1875rem;
+    grid-gap: 4px;
 }
 .rain span{
     color: #222222;
     font-size: 0.9375rem;
-    font-family: "tt";
+    font-family: "yy";
+    font-weight: 500;
 }
 .kevin span{
+    font-weight: 500;
     color: #222222;
     font-size: 0.9375rem;
-    font-family: "tt";
+    font-family: "yy";
 }
 #sp2{
     color: #6A6A6A;
@@ -190,7 +194,7 @@ h1{
     display: flex;
     justify-content: space-between;
     overflow-x: scroll;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #EBEBEB;
 } 
 .categories::-webkit-scrollbar{
     display: none;
@@ -214,9 +218,10 @@ p{
 
 }
 .lastshow{
+    font-weight: 500;
     display: flex;
     align-items: center;
-    font-family: "tt";
+    font-family: "yy";
     font-size: 0.875rem;
 }
 
@@ -503,13 +508,15 @@ p{
          padding: 0px 40px; 
         border-bottom: 1px solid #dddddd;
         padding-bottom: 20px;
-        padding-top: 15px;
+        /* padding-top: 15px; */
         /* margin-top: 20px; */
         
     }
     .topone{
         background-color: #ffff;
         max-width: 100%;
+        padding: 0px 0px 0px 8px;
+        margin: -1px;
         /* display: grid;
         grid-template-columns: repeat(4,1fr);
          */
@@ -559,7 +566,8 @@ p{
         flex-direction: column;
     }
     .lastt2 span{
-        font-family: "tt";
+        font-weight: 500;
+        font-family: "yy";
         font-size: 0.875rem;
         line-height: 1.125rem;
     }
@@ -658,7 +666,8 @@ p{
 
     }
     .lastt3 span{
-        font-family: "tt";
+        font-weight: 500;
+        font-family: "yy";
         font-size: 0.875rem;
         line-height: 1.125rem;
     }
