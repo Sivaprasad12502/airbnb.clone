@@ -35,16 +35,15 @@ h1{
     position: sticky;
     top: 0;
     background-color: #fff; 
-   
-    
-   
+    z-index: 1;
+    padding-top: 14px;
 }
 .divone{
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 19px;
-    margin: 14px 24px 0px;
+    margin: 0px 24px 0px;
     padding: 0px 4px;
     border-radius: 40px; 
     box-shadow: 0px 8px 16px #EBEBEB;
@@ -72,6 +71,8 @@ h1{
 .icon{
     width: 24px;
 }
+
+
 .icndv span{
     font-family: "yy";
     font-size: 0.75rem;
@@ -96,6 +97,16 @@ h1{
 .icons::-webkit-scrollbar{
     display:none;
 }
+.icondivvv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 0px 10px;
+    padding: 4px 0px;
+    border-bottom: 2px solid black;
+    
+}
 .icondivv{
     display: flex;
     flex-direction: column;
@@ -115,10 +126,19 @@ h1{
     object-fit: cover;
 }
 .subdiv{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 5px;
+}
+.arrow{
+    position: absolute;
+    background-color:rgb(219, 213, 213);
+    margin: 12px;
+    padding: 8px;
+    border-radius: 60px;
+    right: 0;
 }
 /* div4 444444444444 */
 .div4{
@@ -186,12 +206,20 @@ p{
     padding: 32px 0px 0px;
     margin: 0;
 }
+
 .last1{
     display: flex;
     flex-direction: column;
     
 
 }
+.lastshow{
+    display: flex;
+    align-items: center;
+    font-family: "tt";
+    font-size: 0.875rem;
+}
+
 .lastt2 ,.lastt3{
     display: none;
 }
@@ -210,17 +238,17 @@ p{
     display: flex;
     flex-direction: column;
     gap: 12px;
-    border-top: 1px solid #EBEBEB ;
+    border-bottom: 1px solid #EBEBEB ;
     background-color: #F7F7F7;
     padding: 24px 0px;
 }
 /* .supp :nth-child(3){
     border-bottom: 1px solid #EBEBEB;
 } */
-.end span{
+.supp span{
     
     font-family: "yy";
-    /* margin-bottom: 12px; */
+     margin:0px 0px 12px; 
     font-weight: 500;
     line-height: 1.125rem;
     font-size: 0.875rem;
@@ -241,6 +269,9 @@ p{
     flex-direction: column;
     justify-content: center;
     gap: 20px;
+    padding: 0px 24px;
+    border-top: 1px solid #EBEBEB;
+    
     
 }
 
@@ -248,9 +279,9 @@ p{
     display: flex;
     flex-direction: column;
     column-gap: 10px;
-    border-bottom: 1px solid gray;
+    /* border-bottom: 1px solid rgb(21, 20, 20); */
     background-color: #F7F7F7;
-    padding: 0px 24px;
+    /* padding: 0px 24px; border issue */
     width: 100%;
     box-sizing: border-box;
    
@@ -269,9 +300,10 @@ p{
     gap: 10px;
 }
 .air{
-    padding: 24px 0px;
+    padding:0px 24px;
     display: flex;
     flex-direction:column;
+    
    
 }
 .inr{
@@ -297,6 +329,7 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 10px;
 }
 .prvcy span{
     font-family: "yy";
@@ -304,6 +337,15 @@ p{
     color: rgb(34, 34, 34);
     margin-bottom: 2px;
     
+}
+.terms{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin: -4px;
+    padding: 4px;
 }
 
 nav{
@@ -318,7 +360,7 @@ nav{
     display: grid;
     grid-template-columns: repeat(1,1fr);
     grid-gap: 40px;
-    min-width: 375px;
+    /* min-width: 375px; */
     max-width: 100%;
     margin: 24px 0px 32px;
     padding:0px 24px;
@@ -377,7 +419,7 @@ p{
 
 }
 .icondivv img{
-    opacity: 50%;
+    opacity: 70%;
 }
 
 
@@ -446,9 +488,12 @@ p{
     .navdiv{
         padding: 48px 40px;
     }
-    .end0{
+    .supp{
         padding: 0px 40px;
     }
+    /* .end0{
+        padding: 0px 40px;
+    } */
     
     .top{
         
@@ -549,6 +594,7 @@ p{
    
     .air{
         align-items: center;
+        padding: 24px 0px;
 
     }
 
@@ -556,7 +602,7 @@ p{
         display: inline;
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 15px;
     }
     #hkk{
         display: flex;
@@ -586,7 +632,7 @@ p{
     
 }
 @media screen and (min-width:1140px) {
-
+    
     .airtitle{
         display: none;
     }
@@ -631,6 +677,44 @@ p{
         flex-direction: row;
         gap: 10px;
     }
+    .topone{
+        margin-left: 11%;
+    }
+    .air{
+        border-top: 1px solid #dddddd;
+        margin: 0px 40px;
+    }
+
+
+    /* .icons{
+        padding: 0px 80px;
+    }
+    .gridone{
+        padding: 0px 80px;
+    }
+    .experiences{
+       padding: 0px 80px;
+    } 
+    .navdiv{
+        padding: 48px 80px;
+    }
+    .end0{
+       padding: 0px 80px;
+    }
+    .top{
+       
+        padding-left: 80px;
+        padding-right: 80px;
+    } */
+    .end{
+        padding: 48px 0px;
+    }
+   
+    .end2{
+        margin: 0px 0px 0px;
+        padding: 4px;
+    }
+
     
 }
 
