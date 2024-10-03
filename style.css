@@ -775,7 +775,7 @@ p{
         margin-left: 14%;
     }
     .air{
-        border-top: 1px solid #dddddd;
+        /* border-top: 1px solid #dddddd; */
         margin: 0px 40px;
     }
     .img{
